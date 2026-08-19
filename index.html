@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الأدهم | نقل وتوريد الأسمنت</title>
+<meta name="description" content="شركة الأدهم لنقل وتوريد الأسمنت - 6 سنوات خبرة وأسـطول من 8 سيارات، مقرنا الشيخ زايد.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+:root{--gold:#b99a5a;--gold2:#d2b46b;--bg:#080808;--card:#111;--text:#f5f2ea;--muted:#aaa}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Cairo,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.8}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;width:100%;z-index:10;background:rgba(8,8,8,.82);backdrop-filter:blur(12px);border-bottom:1px solid #292929}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-size:25px;font-weight:900;color:var(--gold2)}
+.horse{font-size:31px;filter:grayscale(1)}
+nav{display:flex;gap:28px;color:#ddd;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.btn{display:inline-block;background:var(--gold);color:#080808;padding:11px 23px;border-radius:4px;font-weight:800;transition:.2s}
+.btn:hover{background:var(--gold2);transform:translateY(-2px)}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 40%,#292115 0,#111 28%,#080808 65%)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,8,.98),rgba(8,8,8,.68),rgba(8,8,8,.22));pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:700px;padding-top:80px}
+.eyebrow{color:var(--gold2);letter-spacing:2px;font-weight:700;font-size:14px;margin-bottom:15px}
+h1{font-size:clamp(42px,7vw,82px);line-height:1.1;margin-bottom:22px;font-weight:900}
+h1 span{color:var(--gold2)}
+.hero p{font-size:19px;color:#d0d0d0;max-width:650px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.outline{border:1px solid #555;padding:10px 22px;border-radius:4px;color:#eee}
+.outline:hover{border-color:var(--gold2);color:var(--gold2)}
+.stats{background:#0d0d0d;border-top:1px solid #242424;border-bottom:1px solid #242424}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:28px 12px;text-align:center;border-left:1px solid #252525}
+.stat:last-child{border-left:0}
+.stat strong{display:block;font-size:30px;color:var(--gold2)}
+.stat span{color:#aaa;font-size:14px}
+section{padding:90px 0}
+.section-title{margin-bottom:45px}
+.section-title small{color:var(--gold2);font-weight:800}
+.section-title h2{font-size:38px;margin:7px 0}
+.section-title p{color:var(--muted);max-width:650px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-box{border:1px solid #292929;padding:34px;background:linear-gradient(145deg,#151515,#0b0b0b)}
+.about-box .mark{font-size:70px;color:var(--gold);margin-bottom:10px}
+.about h3{font-size:27px;margin-bottom:12px}
+.about p{color:#bbb}
+.services{background:#0d0d0d}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:30px;border:1px solid #292929;background:#111;min-height:220px}
+.card .icon{font-size:35px;color:var(--gold2);margin-bottom:18px}
+.card h3{margin-bottom:10px;font-size:21px}
+.card p{color:#aaa;font-size:14px}
+.fleet{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.fleet-main{min-height:360px;padding:40px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#191919,#090909);border:1px solid #292929}
+.fleet-main .truck{font-size:110px;line-height:1;color:#222}
+.fleet-main h3{font-size:32px;color:var(--gold2)}
+.fleet-side{display:grid;gap:18px}
+.mini{border:1px solid #292929;padding:28px;background:#111}
+.mini strong{font-size:30px;color:var(--gold2);display:block}
+.contact{background:#0d0d0d}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-card{border:1px solid #292929;padding:32px;background:#111}
+.contact-row{padding:18px 0;border-bottom:1px solid #252525}
+.contact-row:last-child{border-bottom:0}
+.contact-row span{display:block;color:#888;font-size:13px}
+.contact-row strong{font-size:18px}
+footer{padding:28px 0;border-top:1px solid #292929;text-align:center;color:#777;font-size:13px}
+@media(max-width:800px){
+nav{display:none}.stats-grid{grid-template-columns:repeat(2,1fr)}
+.stat:nth-child(2){border-left:0}.about,.fleet,.contact-grid{grid-template-columns:1fr}
+.cards{grid-template-columns:1fr}
+section{padding:65px 0}.hero p{font-size:16px}
+}
+
+.products{background:#090909}
+.product-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.product-card{border:1px solid #292929;background:#111;padding:28px;transition:.2s}
+.product-card:hover{border-color:#8e7847;transform:translateY(-2px)}
+.product-card h3{color:var(--gold2);font-size:22px;margin-bottom:8px}
+.product-card .tag{display:inline-block;border:1px solid #3a3a3a;border-radius:20px;padding:3px 10px;margin:4px 3px;color:#ccc;font-size:12px}
+.product-card p{color:#999;font-size:13px;margin-top:10px}
+@media(max-width:800px){.product-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="#home" class="logo"><span class="horse">♞</span>الأدهم</a>
+<nav><a href="#about">عن الشركة</a><a href="#services">خدماتنا</a><a href="#products">الأسمنت</a><a href="#fleet">أسطولنا</a><a href="#contact">تواصل معنا</a></nav>
+<a class="btn" href="#contact">تواصل معنا</a>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-content">
+<div class="eyebrow">ALADHAM • CEMENT TRANSPORT & SUPPLY</div>
+<h1>قوة تتحرك.<br><span>والتزام يُعتمد عليه.</span></h1>
+<p>شركة الأدهم متخصصة في نقل وتوريد الأسمنت، بخبرة 6 سنوات وأسـطول مكوّن من 8 سيارات لخدمة احتياجات مواقع ومشروعات البناء.</p>
+<div class="actions"><a class="btn" href="#services">اكتشف خدماتنا</a><a class="outline" href="#contact">اطلب خدمة</a></div>
+</div>
+</section>
+
+<div class="stats">
+<div class="container stats-grid">
+<div class="stat"><strong>6</strong><span>سنوات خبرة</span></div>
+<div class="stat"><strong>8</strong><span>سيارات في الأسطول</span></div>
+<div class="stat"><strong>100%</strong><span>التزام بالتوريد</span></div>
+<div class="stat"><strong>الشيخ زايد</strong><span>مقر الشركة</span></div>
+</div>
+</div>
+
+<section id="about">
+<div class="container about">
+<div class="about-box"><div class="mark">♞</div><h3>شركة الأدهم</h3><p>نعمل في مجال نقل وتوريد الأسمنت بخبرة عملية تمتد لـ6 سنوات، ونسعى لتقديم خدمة منظمة وموثوقة تلائم طبيعة مواقع البناء واحتياجات العملاء.</p></div>
+<div>
+<div class="section-title"><small>من نحن</small><h2>خبرة عملية. خدمة واضحة.</h2><p>الأدهم شركة متخصصة في خدمات نقل وتوريد الأسمنت، مقرها الشيخ زايد. نعتمد على أسطولنا وفريق التشغيل لضمان تنفيذ عمليات النقل والتوريد بكفاءة.</p></div>
+<a class="btn" href="#contact">تحدث مع فريق الأدهم</a>
+</div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+<div class="section-title"><small>خدماتنا</small><h2>حلول نقل وتوريد الأسمنت</h2><p>خدمات مباشرة ومصممة لتلبية احتياجات مواقع البناء والعملاء.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">▰</div><h3>نقل الأسمنت</h3><p>تنفيذ عمليات نقل الأسمنت إلى مواقع العملاء من خلال أسطول الشركة.</p></div>
+<div class="card"><div class="icon">◆</div><h3>توريد الأسمنت</h3><p>توفير احتياجات العملاء من الأسمنت وفق الكميات ومتطلبات الموقع.</p></div>
+<div class="card"><div class="icon">↗</div><h3>خدمات لوجستية</h3><p>تنظيم ومتابعة عمليات النقل والتوريد بما يساعد على وصول الشحنات في الوقت المطلوب.</p></div>
+</div>
+</div>
+</section>
+
+
+<section class="products" id="products">
+<div class="container">
+<div class="section-title">
+<small>المنتجات والمصانع</small>
+<h2>مجموعة متنوعة من الأسمنت</h2>
+<p>تتعامل الأدهم مع مجموعة من العلامات والمصانع لتلبية احتياجات مشروعات البناء، مع توفير النقل والتوريد حسب طلب العميل وتوافر المنتج.</p>
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+<h3>مصر بني سويف</h3>
+<span class="tag">CEM I 52.5 N</span>
+<span class="tag">CEM I 42.5 N</span>
+<p>أسمنت بورتلاندي. المنتجات المذكورة وفق بيانات علامة الجودة المصرية الحالية.</p>
+</div>
+
+<div class="product-card">
+<h3>الوطنية للأسمنت</h3>
+<span class="tag">CEM I 42.5 N</span>
+<span class="tag">CEM I 42.5 N SR5</span>
+<p>أسمنت بورتلاندي وأسمنت بورتلاندي مقاوم للكبريتات.</p>
+</div>
+
+<div class="product-card">
+<h3>تيتان للأسمنت</h3>
+<span class="tag">CEM I 52.5 N</span>
+<span class="tag">CEM I 42.5 N</span>
+<span class="tag">SRC CEM I 42.5 N-SR5</span>
+<span class="tag">CEM III/A 42.5 N</span>
+<span class="tag">CEM II/A-P 42.5 N</span>
+<span class="tag">CEM IV/A-P SR 42.5 N</span>
+<p>منتجات تيتان تشمل الأسمنت المعبأ والسائب، مع منتجات من مصانع بني سويف والإسكندرية.</p>
+</div>
+
+<div class="product-card">
+<h3>جنوب الوادي</h3>
+<span class="tag">CEM I 42.5 N</span>
+<p>أسمنت بورتلاندي. حالة التوافر والتوريد تعتمد على المنتج والوقت المطلوب.</p>
+</div>
+
+<div class="product-card">
+<h3>المسلح – العين السخنة</h3>
+<span class="tag">المسلح – بوزولاني عادي</span>
+<span class="tag">المسلح تشطيبات 32.5N</span>
+<span class="tag">المسلح بلس CEM I 42.5N</span>
+<span class="tag">المقاوم</span>
+<p>منتجات الشركة العربية للأسمنت، وتشمل الأسمنت السائب والمعبأ حسب المنتج.</p>
+</div>
+
+<div class="product-card">
+<h3>لافارج – العين السخنة</h3>
+<span class="tag">ECOPlanet</span>
+<span class="tag">شطبنا</span>
+<span class="tag">الممتاز قاهر البحار SRC</span>
+<span class="tag">الممتاز بورتلاندي بوزولاني</span>
+<p>مجموعة من منتجات الأسمنت والحلول المخصصة للتطبيقات الإنشائية والتشطيبات.</p>
+</div>
+
+<div class="product-card">
+<h3>سيمكس</h3>
+<span class="tag">Al Moukawem</span>
+<span class="tag">Al Fanar</span>
+<span class="tag">Al Saeed</span>
+<span class="tag">El Mohandes</span>
+<span class="tag">El Derea</span>
+<span class="tag">Assiut Portland Pozzolanic</span>
+<span class="tag">Al Primo Mortar</span>
+<span class="tag">A1 Dry Mortar</span>
+<p>مجموعة من منتجات الأسمنت للاستخدامات المختلفة، من الخرسانة والإنشاءات إلى المونة والتطبيقات الخاصة.</p>
+</div>
+
+<div class="product-card">
+<h3>أسمنت المصريين</h3>
+<span class="tag">أسمنت المصريين OPC</span>
+<span class="tag">أسمنت المصريين SRC</span>
+<span class="tag">نسر الصعيد OPC</span>
+<p>منتجات الأسمنت المصريين متاحة في صورة سائب وأكياس حسب المنتج والسوق.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="fleet">
+<div class="container">
+<div class="section-title"><small>أسطول الأدهم</small><h2>8 سيارات جاهزة للعمل</h2><p>أسطول مخصص لخدمة عمليات نقل وتوريد الأسمنت.</p></div>
+<div class="fleet">
+<div class="fleet-main"><div class="truck">🚛</div><h3>أسطول الأدهم</h3><p>جاهزية تشغيلية وخبرة في نقل الأسمنت وخدمة مواقع البناء.</p></div>
+<div class="fleet-side">
+<div class="mini"><strong>08</strong><span>سيارات</span></div>
+<div class="mini"><strong>06</strong><span>سنوات خبرة</span></div>
+<div class="mini"><strong>24/7</strong><span>تنسيق ومتابعة تشغيلية حسب احتياج العمل</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<div class="section-title"><small>تواصل معنا</small><h2>جاهزين لتنفيذ طلبك</h2><p>للاستفسار أو طلب خدمة نقل وتوريد الأسمنت، تواصل مع شركة الأدهم.</p></div>
+<div class="contact-grid">
+<div class="contact-card">
+<div class="contact-row"><span>المقر</span><strong>الشيخ زايد – مصر</strong></div>
+<div class="contact-row"><span>النشاط</span><strong>نقل وتوريد الأسمنت</strong></div>
+<div class="contact-row"><span>الخبرة</span><strong>6 سنوات</strong></div>
+<div class="contact-row"><span>الأسطول</span><strong>8 سيارات</strong></div>
+</div>
+<div class="contact-card">
+<h3 style="color:var(--gold2);margin-bottom:15px">بيانات التواصل</h3>
+<p style="color:#aaa;margin-bottom:22px">أضف رقم الهاتف والواتساب والبريد الإلكتروني هنا عند تجهيز البيانات النهائية.</p>
+<a class="btn" href="tel:+200000000000">اتصل بنا</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>© 2026 شركة الأدهم — نقل وتوريد الأسمنت</footer>
+</body>
+</html>
